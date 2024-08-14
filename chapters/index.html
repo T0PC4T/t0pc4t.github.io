@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- <html class="no-js" lang="en"> -->
+<html lang="en" data-theme="light">
+  <head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="scaffolded-by" content="https://github.com/dart-lang/sdk" />
+<link rel="icon" type="image/png" href="/images/favicon.ico" />
+<link rel="stylesheet" href="/styles/styles.css" />
+<script defer src="/main.dart.js"></script>
+<link
+  rel="stylesheet"
+  href="https://bulma.io/vendor/fontawesome-free-6.5.2-web/css/all.min.css"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+<script
+  defer
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""
+></script>
+<style>
+  #map {
+    height: 400px;
+    z-index: 1;
+  }
+</style>
+
+    <title>Chapters | juventutem.org</title>
+    
+  </head>
+
+  <body>
+<nav
+  class="navbar is-fixed-top"
+  role="navigation"
+  aria-label="main navigation"
+  style="z-index: 5"
+>
+  <div class="navbar-brand">
+    <a class="navbar-item" style="height: 70px" href="/">
+      <img
+        src="/images/logo.png"
+        width="50px"
+        height="60px"
+        style="max-height: unset"
+      />
+      <span class="title is-5 ml-2 has-text-primary">Juventutem</span>
+    </a>
+
+    <a
+      role="button"
+      class="navbar-burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/books/"> Books </a>
+      <a class="navbar-item" href="/chapters/"> Chapters </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="/about/"> About </a>
+        <div class="navbar-dropdown">
+          <!-- <hr class="navbar-divider" /> -->
+          <a class="navbar-item" href="/affiliate/"> Affiliate </a>
+          <a class="navbar-item" href="/post/?post=6VDv4Hy9XHnx1hFiVjvwbx">
+            Approvals
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div
+          class="is-flex is-flex-direction-row is-justify-content-flex-start"
+        >
+          <a
+            title="Follow on Facebook"
+            href="https://www.facebook.com/londonjuventutem/?locale=en_GB"
+            class="m-2"
+          >
+            <span class="icon">
+              <i
+                class="fa-brands fa-facebook has-text-primary title is-4"
+              ></i>
+            </span>
+          </a>
+          <!--  -->
+          <a
+            title="Follow on Twitter"
+            href="https://x.com/ldnjuventutem?lang=en"
+            class="m-2"
+          >
+            <i class="fa-brands fa-twitter has-text-primary title is-4"></i>
+          </a>
+          <!--  -->
+          <a
+            title="Follow on Youtube"
+            href="https://www.youtube.com/channel/UCAx7fXOY34ZzYuY_tTrhLnA"
+            class="m-2"
+          >
+            <i class="fa-brands fa-youtube has-text-primary title is-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Social card -->
+<section
+  class="has-background-light is-fullwidth p-2"
+  style="height: 70px"
+></section>    
+    <section class="section" style="min-height: 500px;">
+      <div class="columns">
+        <div
+          class="column is-offset-0-mobile is-12-mobile is-offset-2-desktop is-8-desktop  "
+ data-function="fetch(chapterData, chapters, sys.createdAt,
+20)"        >
+          <h1 class="title">Chapters</h1>
+
+<div id="map" data-function="mapFromContentful(chapterData)"></div>
+
+<div class="is-fullwidth">
+  <div
+    class="card dart-function-blinder mb-6"
+    data-function="fetchFor(chapterData)"
+  >
+    <div class="card-content">
+      <div
+        class="m-2 is-flex is-flex-direction-column is-flex-align-items-flex-start"
+      >
+        <p class="title is-4">*|title|*</p>
+        <p class="subtitle is-6">*|address|*</p>
+        <div class="content mt-2 is-flex-grow-2">*|content|*</div>
+        <div
+          class="mt-2 is-fullwidth is-flex is-flex-direction-row is-justify-content-flex-end"
+        >
+          <button id="mapButton-*|id|*" class="button is-link">View on map</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Pagination -->
+<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+  <ul class="pagination-list">
+    <li
+      class="dart-function-blinder"
+      data-function="fetchPaginationPrev(chapterData)"
+    >
+      <a
+        href="./?page=*|payload|*"
+        class="pagination-link"
+        aria-label="Goto page *|payload|*"
+        >*|payload|*</a
+      >
+    </li>
+    <li
+      class="dart-function-blinder"
+      data-function="fetchPaginationCurrent(chapterData)"
+    >
+      <a
+        href="#"
+        class="pagination-link is-current"
+        aria-label="Goto page *|payload|*"
+        >*|payload|*</a
+      >
+    </li>
+    <li
+      class="dart-function-blinder"
+      data-function="fetchPaginationNext(chapterData)"
+    >
+      <a
+        href="./?page=*|payload|*"
+        class="pagination-link"
+        aria-label="Goto page *|payload|*"
+        >*|payload|*</a
+      >
+    </li>
+  </ul>
+</nav>
+<!-- END PAGINATION -->
+        </div>
+      </div>
+    </section>
+<footer class="footer has-background-grey-lighter">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Fœderatio Internationalis Juventutem.</strong>
+      The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. Website
+      content is licensed
+      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+        >CC BY NC SA 4.0</a
+      >.
+    </p>
+  </div>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(
+      document.querySelectorAll(".navbar-burger"),
+      0
+    );
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach((el) => {
+      el.addEventListener("click", () => {
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle("is-active");
+        $target.classList.toggle("is-active");
+      });
+    });
+  });
+</script>
+<!-- Contentful Client -->
+<script
+  src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"
+  charset="utf-8"
+></script>
+
+<script>
+  var exports = {}; // quick fix because 'exports' is not defined in rich-text bundle below
+</script>
+<!-- Rich Text Library -->
+<script
+  src="https://cdn.jsdelivr.net/npm/@contentful/rich-text-html-renderer@12.0.0/dist/rich-text-html-renderer.es5.min.js"
+  charset="utf-8"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@contentful/rich-text-types@16.8.3/dist/blocks.min.js"
+  charset="utf-8"
+></script>
+<script>
+  window.CrenderOptions = {
+    renderNode: {
+      [BLOCKS.EMBEDDED_ASSET]: function (node, next) {
+        return `<div class="columns is-fullwidth">
+          <div
+            class="column is-8-mobile is-6-desktop is-offset-2-mobile is-offset-3-desktop"
+          >
+            <figure class="image is-fullwidth">
+              <img
+                class="m-2"
+                src=${node.data.target.fields.file.url}
+                alt=""
+                srcset=""
+              />
+            </figure>
+          </div>
+        </div>
+        `;
+      },
+    },
+  };
+</script>  </body>
+</html>
