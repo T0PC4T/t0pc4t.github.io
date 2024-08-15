@@ -2,13 +2,16 @@
 .packages
 about/index.html
 affiliate/index.html
+approvals/index.html
 books/index.html
 chapters/index.html
+commitments/index.html
 contact/index.html
 images/approvalLetter.jpg
 images/approvalLetter2.jpg
 images/banner - Copy.jpg
 images/banner.jpg
+images/favicon.ico
 images/juventutemMeeting.png
 images/logo.png
 images/placeholder.jpg
@@ -59,5 +62,8 @@ packages/vm_service/src/DEPENDENCIES.md
 packages/vm_service/src/README.md
 packages/web/fix_data.yaml
 post/index.html
+posts/index.html
 src/plugins/results.json
 styles/styles.css
+videos/index.html
+wyd/index.html

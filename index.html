@@ -57,18 +57,30 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item" href="/books/"> Books </a>
-      <a class="navbar-item" href="/chapters/"> Chapters </a>
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link" href="/about/"> About </a>
         <div class="navbar-dropdown">
           <!-- <hr class="navbar-divider" /> -->
-          <a class="navbar-item" href="/affiliate/"> Affiliate </a>
-          <a class="navbar-item" href="/post/?post=6VDv4Hy9XHnx1hFiVjvwbx">
-            Approvals
-          </a>
+          <a class="navbar-item" href="/about/"> About Juventutem </a>
+          <a class="navbar-item" href="/commitments/"> The Commitments </a>
+          <a class="navbar-item" href="/approvals/"> The Approvals </a>
         </div>
       </div>
+
+      <a class="navbar-item" href="/chapters/"> Chapters </a>
+      <a class="navbar-item" href="/affiliate/"> Affiliate </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="/books/"> Resources </a>
+        <div class="navbar-dropdown">
+          <!-- <hr class="navbar-divider" /> -->
+          <a class="navbar-item" href="https://assets.ctfassets.net/8e6y7fam3t8b/tKr4IVC8jJzqXvSlg5cRZ/a7c602e07b55d98a2985d7a69be40b20/2008-02-19-Charte-EN.-revised.pdf"> Charter </a>
+          <a class="navbar-item" href="/books/"> Books </a>
+          <!-- TODO -->
+          <a class="navbar-item" href="/videos/"> Videos </a>
+          <a class="navbar-item" href="/wyd/"> WYD Reports </a>
+        </div>
+      </div>
+      
     </div>
 
     <div class="navbar-end">
@@ -82,9 +94,7 @@
             class="m-2"
           >
             <span class="icon">
-              <i
-                class="fa-brands fa-facebook has-text-primary title is-4"
-              ></i>
+              <i class="fa-brands fa-facebook has-text-primary title is-4"></i>
             </span>
           </a>
           <!--  -->
@@ -122,7 +132,7 @@
         background-attachment: fixed;
       "
     >
-      <div class="hero-body" style="height: 550px">
+      <div class="hero-body" style="height: 450px">
         <div class="container has-text-centered">
           <h1 class="title is-1 has-text-primary">
             Fœderatio Internationalis Juventutem
@@ -138,15 +148,15 @@
     <section>
       <div
         class="columns is-desktop pb-0"
-        style="position: relative; top: -100px"
+        style="position: relative; top: -60px"
       >
         <a class="column p-6" href="#posts">
           <div class="card" data-function="onHover(has-background-info-light)">
-            <div class="card-image">
+            <!-- <div class="card-image">
               <figure class="image is-4by3">
                 <img src="/images/banner.jpg" alt="Placeholder image" />
               </figure>
-            </div>
+            </div> -->
             <div class="card-content">
               <div class="is-flex is-justify-content-space-between">
                 <div class="content m-0">
@@ -161,11 +171,11 @@
         </a>
         <a class="column p-6" href="/chapters/">
           <div class="card" data-function="onHover(has-background-info-light)">
-            <div class="card-image">
+            <!-- <div class="card-image">
               <figure class="image is-4by3">
                 <img src="/images/banner.jpg" alt="Placeholder image" />
               </figure>
-            </div>
+            </div> -->
             <div class="card-content">
               <div
                 class="is-flex is-justify-content-space-between is-align-items-center"
@@ -183,11 +193,11 @@
 
         <a class="column p-6" href="/contact/">
           <div class="card" data-function="onHover(has-background-info-light)">
-            <div class="card-image">
+            <!-- <div class="card-image">
               <figure class="image is-4by3">
                 <img src="/images/banner.jpg" alt="Placeholder image" />
               </figure>
-            </div>
+            </div> -->
             <div class="card-content">
               <div class="is-flex is-justify-content-space-between">
                 <div class="content m-0">
@@ -208,9 +218,9 @@
         <div class="column is-1-desktop"></div>
         <div class="column">
           <div class="">
-            <figure class="image is-4by3">
+            <figure class="image">
               <img
-                src="https://bulma.io/assets/images/placeholders/640x480.png"
+                src="/images/juventutemMeeting.png"
               />
             </figure>
           </div>
@@ -235,14 +245,14 @@
           ></p>
           <script>
             var d = new Date();
-            var yearsGoing = d.getFullYear() - 2006;
+            var yearsGoing = d.getFullYear() - 2004;
             document.getElementById("yearGoing").innerText =
-              yearsGoing.toString() + " Years of something..";
+              yearsGoing.toString() + " Years";
           </script>
         </div>
       </div>
     </section>
-    <div class="p-4 pb-6 has-background-light">
+    <section class="p-4 pb-6 has-background-light">
       <!-- START ARTICLE FEED -->
       <h2 id="posts" class="title is-2 is-flex is-justify-content-center m-6">
         Latest Posts
@@ -306,9 +316,9 @@
     </div>
 
     <div class="panel-block">
-      <button class="button is-link is-outlined is-fullwidth">
-        See all posts
-      </button>
+      <a class="button is-link is-outlined is-fullwidth" href="/posts/">
+        View all posts
+      </a>
     </div>
   </nav>
   <!-- Sidebar -->
@@ -357,7 +367,7 @@
         </ul>
       </nav>
       <!-- End Pagination -->
-    </div>
+    </section>
 <footer class="footer has-background-grey-lighter">
   <div class="content has-text-centered">
     <p>
@@ -411,28 +421,9 @@
   src="https://cdn.jsdelivr.net/npm/@contentful/rich-text-types@16.8.3/dist/blocks.min.js"
   charset="utf-8"
 ></script>
-<script>
-  window.CrenderOptions = {
-    renderNode: {
-      [BLOCKS.EMBEDDED_ASSET]: function (node, next) {
-        return `<div class="columns is-fullwidth">
-          <div
-            class="column is-8-mobile is-6-desktop is-offset-2-mobile is-offset-3-desktop"
-          >
-            <figure class="image is-fullwidth">
-              <img
-                class="m-2"
-                src=${node.data.target.fields.file.url}
-                alt=""
-                srcset=""
-              />
-            </figure>
-          </div>
-        </div>
-        `;
-      },
-    },
-  };
-</script>    <!-- <script async type="text/javascript" src="../js/bulma.js"></script> -->
+<script
+  src="https://cdn.jsdelivr.net/npm/@contentful/rich-text-types@16.8.3/dist/inlines.min.js"
+  charset="utf-8"
+></script>    <!-- <script async type="text/javascript" src="../js/bulma.js"></script> -->
   </body>
 </html>

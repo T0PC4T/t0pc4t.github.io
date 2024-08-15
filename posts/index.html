@@ -17,8 +17,7 @@
 <link
   rel="stylesheet"
   href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-<style>
+/> <style>
     h3,h4,h5 {
       margin-bottom: 1rem;
     }
@@ -34,7 +33,7 @@
       font-weight: 600;
       line-height: var(--bulma-title-line-height);
     }
-  </style>    <title>Affiliate | juventutem.org</title>
+  </style>     <title>Posts | juventutem.org</title>
     
   </head>
 
@@ -141,10 +140,74 @@
     <section class="section" style="min-height: 500px;">
       <div class="columns">
         <div
-          class="column is-offset-0-mobile is-12-mobile is-offset-2-desktop is-8-desktop  dart-function-blinder"
- data-function="get(pages, id:xad7YHVEWXCpHhUmnH0VV)"        >
-          <h1 class="title">*|title|*</h1>
- *|content|*         </div>
+          class="column is-offset-0-mobile is-12-mobile is-offset-2-desktop is-8-desktop "
+data-function="fetch(blogEvents, events, -fields.eventDate, 5)"        >
+          <h1 class="title">Posts</h1>
+<!-- START ARTICLE -->
+<div class="mb-5">
+  <div
+    class="card article dart-function-blinder"
+    data-function="fetchFor(blogEvents)"
+  >
+    <div class="card-content">
+      <div class="media">
+        <div class="media-content has-text-centered">
+          <p class="title article-title">*|title|*</p>
+          <div class="tags has-addons level-item">
+            <span class="tag is-rounded is-info">@secretary</span>
+            <span class="tag">*|eventDate|*</span>
+          </div>
+        </div>
+      </div>
+      <div class="content article-body">
+        <!-- <p class="has-text-centered"></p> -->
+        *|content|*
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END ARTICLE -->
+<!-- END ARTICLE FEED -->
+<!-- Pagination -->
+<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+  <ul class="pagination-list">
+    <li
+      class="dart-function-blinder"
+      data-function="fetchPaginationPrev(blogEvents)"
+    >
+      <a
+        href="./?page=*|payload|*"
+        class="pagination-link"
+        aria-label="Goto page *|payload|*"
+        >*|payload|*</a
+      >
+    </li>
+    <li
+      class="dart-function-blinder"
+      data-function="fetchPaginationCurrent(blogEvents)"
+    >
+      <a
+        href="#"
+        class="pagination-link is-current"
+        aria-label="Goto page *|payload|*"
+        >*|payload|*</a
+      >
+    </li>
+    <li
+      class="dart-function-blinder"
+      data-function="fetchPaginationNext(blogEvents)"
+    >
+      <a
+        href="./?page=*|payload|*"
+        class="pagination-link"
+        aria-label="Goto page *|payload|*"
+        >*|payload|*</a
+      >
+    </li>
+  </ul>
+</nav>
+<!-- End Pagination -->
+        </div>
       </div>
     </section>
 <footer class="footer has-background-grey-lighter">

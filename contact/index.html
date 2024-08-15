@@ -17,8 +17,7 @@
 <link
   rel="stylesheet"
   href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-    <title>Contact | juventutem.org</title>
+/>      <title>Contact | juventutem.org</title>
     
   </head>
 
@@ -56,18 +55,30 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item" href="/books/"> Books </a>
-      <a class="navbar-item" href="/chapters/"> Chapters </a>
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link" href="/about/"> About </a>
         <div class="navbar-dropdown">
           <!-- <hr class="navbar-divider" /> -->
-          <a class="navbar-item" href="/affiliate/"> Affiliate </a>
-          <a class="navbar-item" href="/post/?post=6VDv4Hy9XHnx1hFiVjvwbx">
-            Approvals
-          </a>
+          <a class="navbar-item" href="/about/"> About Juventutem </a>
+          <a class="navbar-item" href="/commitments/"> The Commitments </a>
+          <a class="navbar-item" href="/approvals/"> The Approvals </a>
         </div>
       </div>
+
+      <a class="navbar-item" href="/chapters/"> Chapters </a>
+      <a class="navbar-item" href="/affiliate/"> Affiliate </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="/books/"> Resources </a>
+        <div class="navbar-dropdown">
+          <!-- <hr class="navbar-divider" /> -->
+          <a class="navbar-item" href="https://assets.ctfassets.net/8e6y7fam3t8b/tKr4IVC8jJzqXvSlg5cRZ/a7c602e07b55d98a2985d7a69be40b20/2008-02-19-Charte-EN.-revised.pdf"> Charter </a>
+          <a class="navbar-item" href="/books/"> Books </a>
+          <!-- TODO -->
+          <a class="navbar-item" href="/videos/"> Videos </a>
+          <a class="navbar-item" href="/wyd/"> WYD Reports </a>
+        </div>
+      </div>
+      
     </div>
 
     <div class="navbar-end">
@@ -81,9 +92,7 @@
             class="m-2"
           >
             <span class="icon">
-              <i
-                class="fa-brands fa-facebook has-text-primary title is-4"
-              ></i>
+              <i class="fa-brands fa-facebook has-text-primary title is-4"></i>
             </span>
           </a>
           <!--  -->
@@ -116,17 +125,36 @@
       <div class="columns">
         <div
           class="column is-offset-0-mobile is-12-mobile is-offset-2-desktop is-8-desktop "
-        >
-          <h1 class="title">Contact</h1>
-<article class="message">
-  <div class="message-header">
-    <p>Juventutem Email List</p>
+data-function="fetch(membersData, members)"        >
+          <h1 class="title">Members & Contact
+Information</h1>
+<!-- START ARTICLE -->
+<div class="mb-5 columns">
+  <div class="column is-12-mobile is-6-tablet is-6-desktop is-6-widescreen dart-function-blinder" data-function="fetchFor(membersData)">
+    <div
+      class="m-4 card"
+      
+    >
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img
+            src="*|image|*"
+            alt="An Image of *|name|*"
+            style="object-fit: cover"
+          />
+        </figure>
+      </div>
+      <div class="card-content">
+        <p class="title is-4">*|name|*</p>
+        <p class="subtitle is-6">
+          *|role|*<br /><br />*|phone|*<br />*|email|*
+        </p>
+        <div class="content">*|biography|*</div>
+      </div>
+    </div>
   </div>
-  <div class="message-body">
-    <strong>Juventutem Warrington: </strong>juventutemwarrington@gmail.com<br><br>
-    <strong>Juventutem Warrington: </strong>juventutemwarrington@gmail.com<br><br>
-  </div>
-</article>
+</div>
+<!-- END ARTICLE -->
         </div>
       </div>
     </section>
@@ -183,27 +211,8 @@
   src="https://cdn.jsdelivr.net/npm/@contentful/rich-text-types@16.8.3/dist/blocks.min.js"
   charset="utf-8"
 ></script>
-<script>
-  window.CrenderOptions = {
-    renderNode: {
-      [BLOCKS.EMBEDDED_ASSET]: function (node, next) {
-        return `<div class="columns is-fullwidth">
-          <div
-            class="column is-8-mobile is-6-desktop is-offset-2-mobile is-offset-3-desktop"
-          >
-            <figure class="image is-fullwidth">
-              <img
-                class="m-2"
-                src=${node.data.target.fields.file.url}
-                alt=""
-                srcset=""
-              />
-            </figure>
-          </div>
-        </div>
-        `;
-      },
-    },
-  };
-</script>  </body>
+<script
+  src="https://cdn.jsdelivr.net/npm/@contentful/rich-text-types@16.8.3/dist/inlines.min.js"
+  charset="utf-8"
+></script>  </body>
 </html>
