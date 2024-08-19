@@ -8,6 +8,11 @@
 <meta name="scaffolded-by" content="https://github.com/dart-lang/sdk" />
 <link rel="icon" type="image/png" href="/images/favicon.ico" />
 <link rel="stylesheet" href="/styles/styles.css" />
+
+<meta property="og:title" content="Fœderatio Internationalis Juventutem | juventutem.org">
+<meta property="og:description" content="Juventutem is an international Catholic movement for the sanctification of young people through the Roman traditions of the Church.">
+<meta property="og:image" content="https://www.juventutem.org/images/logo.png">
+<meta property="og:url" content="https://www.juventutem.org/">
 <script defer src="/main.dart.js"></script>
 <link
   rel="stylesheet"
@@ -18,6 +23,10 @@
   rel="stylesheet"
   href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 />    <title>Fœderatio Internationalis Juventutem | juventutem.org</title>
+    <meta
+      name="description"
+      content="Juventutem is an international Catholic movement for the sanctification of young people through the Roman traditions of the Church."
+    />
   </head>
 
   <body
@@ -73,47 +82,74 @@
         <a class="navbar-link" href="/books/"> Resources </a>
         <div class="navbar-dropdown">
           <!-- <hr class="navbar-divider" /> -->
-          <a class="navbar-item" href="https://assets.ctfassets.net/8e6y7fam3t8b/tKr4IVC8jJzqXvSlg5cRZ/a7c602e07b55d98a2985d7a69be40b20/2008-02-19-Charte-EN.-revised.pdf"> Charter </a>
+          <a
+            class="navbar-item"
+            href="https://assets.ctfassets.net/8e6y7fam3t8b/tKr4IVC8jJzqXvSlg5cRZ/a7c602e07b55d98a2985d7a69be40b20/2008-02-19-Charte-EN.-revised.pdf"
+          >
+            Charter
+          </a>
           <a class="navbar-item" href="/books/"> Books </a>
           <!-- TODO -->
           <a class="navbar-item" href="/videos/"> Videos </a>
           <a class="navbar-item" href="/wyd/"> WYD Reports </a>
         </div>
       </div>
-      
     </div>
-
+    <style>
+      #facebook:hover {
+        color: #476bfc !important;
+      }
+      #instagram:hover {
+        color: #9f1184 !important;
+      }
+      #twitter-x:hover {
+        color: #000000 !important;
+      }
+    </style>
     <div class="navbar-end">
       <div class="navbar-item">
         <div
           class="is-flex is-flex-direction-row is-justify-content-flex-start"
         >
+          <!--  -->
+          <a
+            title="Follow on X"
+            href="https://x.com/FIJuventutem?t=MFXkDYXfOWohaRfGes-seA&s=09"
+            class="m-1"
+          >
+            <i id="twitter-x" class="fa-brands fa-x-twitter has-text-primary title is-3"></i>
+          </a>
+          <!--  -->
+          <a
+            title="Follow on Instagram"
+            href="https://www.instagram.com/fijuventutem?igsh=MXM0cWRtenc2NzZn"
+            class="m-1"
+          >
+            <i id="instagram" class="fa-brands fa-instagram has-text-primary title is-3"></i>
+          </a>
+          <!--  -->
+
           <a
             title="Follow on Facebook"
-            href="https://www.facebook.com/londonjuventutem/?locale=en_GB"
-            class="m-2"
+            href="https://www.facebook.com/fijuventutem"
+            class="m-1"
           >
-            <span class="icon">
-              <i class="fa-brands fa-facebook has-text-primary title is-4"></i>
-            </span>
+            <i id="facebook" class="fa-brands fa-facebook has-text-primary title is-3"></i>
           </a>
           <!--  -->
-          <a
-            title="Follow on Twitter"
-            href="https://x.com/ldnjuventutem?lang=en"
-            class="m-2"
-          >
-            <i class="fa-brands fa-twitter has-text-primary title is-4"></i>
-          </a>
-          <!--  -->
-          <a
+          <!-- <a
             title="Follow on Youtube"
             href="https://www.youtube.com/channel/UCAx7fXOY34ZzYuY_tTrhLnA"
             class="m-2"
           >
             <i class="fa-brands fa-youtube has-text-primary title is-4"></i>
-          </a>
+          </a> -->
         </div>
+      </div>
+      <div class="navbar-item">
+        <a class="button is-info" href="/contact/">
+          <strong>Contact</strong>
+        </a>
       </div>
     </div>
   </div>
@@ -134,31 +170,30 @@
     >
       <div class="hero-body" style="height: 450px">
         <div class="container has-text-centered">
-          <h1 class="title is-1 has-text-primary">
-            Fœderatio Internationalis Juventutem
-          </h1>
-          <p class="title is-6 has-text-black-bis">
-            "And I will go to the altar of God, to God who gives joy to my
-            youth..." - Psalm 43
-          </p>
+          <div class="card has-background-primary p-5">
+            <h1 class="title is-1 has-text-white">
+              Fœderatio Internationalis Juventutem
+            </h1>
+            <p class="title is-6 has-text-white">
+              "And I will go to the altar of God, to God who gives joy to my
+              youth..." - Psalm 43
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <section>
       <div
-        class="columns is-desktop pb-0"
-        style="position: relative; top: -60px"
+        class="columns pb-6 is-desktop pb-0"
+        style="position: relative; top: -40px"
       >
-        <a class="column p-6" href="#posts">
+        <a class="column pl-6 pr-6" href="#posts">
           <div class="card" data-function="onHover(has-background-info-light)">
-            <!-- <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="/images/banner.jpg" alt="Placeholder image" />
-              </figure>
-            </div> -->
             <div class="card-content">
-              <div class="is-flex is-justify-content-space-between">
+              <div
+                class="is-flex is-justify-content-space-between is-align-items-center"
+              >
                 <div class="content m-0">
                   <p class="title is-4">View Posts</p>
                 </div>
@@ -169,13 +204,8 @@
             </div>
           </div>
         </a>
-        <a class="column p-6" href="/chapters/">
+        <a class="column pl-6 pr-6" href="/chapters/">
           <div class="card" data-function="onHover(has-background-info-light)">
-            <!-- <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="/images/banner.jpg" alt="Placeholder image" />
-              </figure>
-            </div> -->
             <div class="card-content">
               <div
                 class="is-flex is-justify-content-space-between is-align-items-center"
@@ -191,15 +221,12 @@
           </div>
         </a>
 
-        <a class="column p-6" href="/contact/">
+        <a class="column pl-6 pr-6" href="/contact/">
           <div class="card" data-function="onHover(has-background-info-light)">
-            <!-- <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="/images/banner.jpg" alt="Placeholder image" />
-              </figure>
-            </div> -->
             <div class="card-content">
-              <div class="is-flex is-justify-content-space-between">
+              <div
+                class="is-flex is-justify-content-space-between is-align-items-center"
+              >
                 <div class="content m-0">
                   <p class="title is-4">Contact Us</p>
                 </div>
@@ -219,9 +246,7 @@
         <div class="column">
           <div class="">
             <figure class="image">
-              <img
-                src="/images/juventutemMeeting.png"
-              />
+              <img src="/images/juventutemMeeting.png" />
             </figure>
           </div>
         </div>
@@ -237,22 +262,40 @@
         </div>
         <div class="column is-1-desktop"></div>
       </div>
-      <div class="is-flex is-justify-content-center">
-        <div class="card p-5 mt-3">
-          <p
-            id="yearGoing"
-            class="mt-4 title is-3 is-flex is-justify-content-center"
-          ></p>
-          <script>
-            var d = new Date();
-            var yearsGoing = d.getFullYear() - 2004;
-            document.getElementById("yearGoing").innerText =
-              yearsGoing.toString() + " Years";
-          </script>
-        </div>
+    </section>
+    <section
+      class="has-background-grey-light p-6 is-flex is-justify-content-center"
+      style="
+        background-image: url('images/banner2.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      "
+    >
+      <div
+        class="card p-5 m-6 is-flex is-justify-content-center is-flex-direction-column is-align-items-center"
+      >
+        <p class="mt-4 title is-3 has-text-centered">
+          Fœderatio Internationalis Juventutem<br /><span class="title is-5"
+            >Fostering tradition since 2004</span
+          >
+        </p>
+        <p
+          id="yearGoing"
+          class="mt-4 title is-2 has-text-primary has-text-centered"
+        ></p>
+        <script>
+          const foundationDate = new Date("2004-05-24");
+          var diff = Date.now() - foundationDate;
+          var ageDate = new Date(diff); // miliseconds from epoch
+          document.getElementById("yearGoing").innerHTML =
+            Math.abs(ageDate.getUTCFullYear() - 1970).toString() +
+            "&nbspYEARS";
+        </script>
       </div>
     </section>
-    <section class="p-4 pb-6 has-background-light">
+    <section class="p-4 pb-6 has-background-grey-light">
       <!-- START ARTICLE FEED -->
       <h2 id="posts" class="title is-2 is-flex is-justify-content-center m-6">
         Latest Posts
@@ -368,17 +411,22 @@
       </nav>
       <!-- End Pagination -->
     </section>
-<footer class="footer has-background-grey-lighter">
-  <div class="content has-text-centered">
-    <p>
-      <strong>Fœderatio Internationalis Juventutem.</strong>
-      The source code is licensed
-      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. Website
-      content is licensed
-      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
-        >CC BY NC SA 4.0</a
-      >.
-    </p>
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column is-narrow">
+        <figure class="image is-64x64">
+          <img src="/images/logo.png" alt="Company Logo" />
+        </figure>
+      </div>
+      <div class="column">
+        <p>
+          <strong>Fœderatio Internationalis Juventutem.</strong> - © 2024 All Rights Reserved.
+          <br />
+          123 Main Street, City, State 12345 | Phone: (123) 456-7890
+        </p>
+      </div>
+    </div>
   </div>
 </footer>
 <script>

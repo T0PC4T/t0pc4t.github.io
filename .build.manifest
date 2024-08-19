@@ -1,5 +1,4 @@
 .dart_tool/package_config.json
-.packages
 about/index.html
 affiliate/index.html
 approvals/index.html
@@ -11,6 +10,7 @@ images/approvalLetter.jpg
 images/approvalLetter2.jpg
 images/banner - Copy.jpg
 images/banner.jpg
+images/banner2.jpg
 images/favicon.ico
 images/juventutemMeeting.png
 images/logo.png

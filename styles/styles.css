@@ -586,7 +586,7 @@ fieldset[disabled] .pagination-ellipsis {
   --bulma-card-color: var(--bulma-text);
   --bulma-card-background-color: var(--bulma-scheme-main);
   --bulma-card-shadow: var(--bulma-shadow);
-  --bulma-card-radius: 0.75rem;
+  --bulma-card-radius: 0;
   --bulma-card-header-background-color: transparent;
   --bulma-card-header-color: var(--bulma-text-strong);
   --bulma-card-header-padding: 0.75rem 1rem;
@@ -16819,12 +16819,12 @@ has-background-danger.is-hoverable:active {
 
 .is-color-grey-light,
 .has-text-grey-light {
-  color: hsl(221, 14%, 71%) !important;
+  color: #ecf0f7 !important;
 }
 
 .is-background-grey-light,
 .has-background-grey-light {
-  background-color: hsl(221, 14%, 71%) !important;
+  background-color: #ecf0f7 !important;
 }
 
 .is-color-grey-lighter,
@@ -20399,7 +20399,7 @@ has-background-danger.is-hoverable:active {
   --bulma-grey-darker: hsl(221, 14%, 21%);
   --bulma-grey-dark: hsl(221, 14%, 29%);
   --bulma-grey: hsl(221, 14%, 48%);
-  --bulma-grey-light: hsl(221, 14%, 71%);
+  --bulma-grey-light: #ecf0f7;
   --bulma-grey-lighter: hsl(221, 14%, 86%);
   --bulma-white-ter: hsl(221, 14%, 96%);
   --bulma-white-bis: hsl(221, 14%, 98%);
@@ -21300,7 +21300,7 @@ has-background-danger.is-hoverable:active {
     --bulma-grey-darker: hsl(221, 14%, 21%);
     --bulma-grey-dark: hsl(221, 14%, 29%);
     --bulma-grey: hsl(221, 14%, 48%);
-    --bulma-grey-light: hsl(221, 14%, 71%);
+    --bulma-grey-light: #ecf0f7;
     --bulma-grey-lighter: hsl(221, 14%, 86%);
     --bulma-white-ter: hsl(221, 14%, 96%);
     --bulma-white-bis: hsl(221, 14%, 98%);
@@ -22168,7 +22168,7 @@ has-background-danger.is-hoverable:active {
   --bulma-grey-darker: hsl(221, 14%, 21%);
   --bulma-grey-dark: hsl(221, 14%, 29%);
   --bulma-grey: hsl(221, 14%, 48%);
-  --bulma-grey-light: hsl(221, 14%, 71%);
+  --bulma-grey-light: #ecf0f7;
   --bulma-grey-lighter: hsl(221, 14%, 86%);
   --bulma-white-ter: hsl(221, 14%, 96%);
   --bulma-white-bis: hsl(221, 14%, 98%);
