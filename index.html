@@ -158,35 +158,29 @@
 <section
   class="has-background-light is-fullwidth p-2"
   style="height: 70px"
-></section>    <section
-      class="hero is-info is-medium is-bold has-background-white"
-      style="
-        background-image: url('images/banner.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      "
-    >
-      <div class="hero-body" style="height: 450px">
-        <div class="container has-text-centered">
-          <div class="card has-background-primary p-5">
-            <h1 class="title is-1 has-text-white">
-              Fœderatio Internationalis Juventutem
-            </h1>
-            <p class="title is-6 has-text-white">
-              "And I will go to the altar of God, to God who gives joy to my
-              youth..." - Psalm 43
-            </p>
-          </div>
-        </div>
+></section>    <section class="has-background-white is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+      <img
+        class="p-3"
+        src="images/logo_no_words.svg"
+        alt="Juventutem Logo SVG"
+        object-fit=""
+        style="height: 50vh; width: auto; margin: 0; padding: 0"
+        
+      />
+      <div class="has-text-centered has-background-white pb-6 is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+        <h1 class="title is-1 has-text-primary">
+          Fœderatio Internationalis Juventutem
+        </h1>
+        <p class="title is-6 has-text-primary-dark">
+          "And I will go to the altar of God, to God who gives joy to my
+          youth..." - Psalm 43
+        </p>
       </div>
     </section>
 
     <section>
       <div
-        class="columns pb-6 is-desktop pb-0"
-        style="position: relative; top: -40px"
+        class="columns pt-5 pb-5 is-desktop"
       >
         <a class="column pl-6 pr-6" href="#posts">
           <div class="card" data-function="onHover(has-background-info-light)">
@@ -239,19 +233,23 @@
         </a>
       </div>
     </section>
-    <section class="pl-3 pr-3 pb-6">
+    <section class="pl-3 pr-3 pb-6 pt-6">
       <h2 class="title is-2 is-flex is-justify-content-center">Who We Are</h2>
       <div class="columns is-desktop">
         <div class="column is-1-desktop"></div>
         <div class="column">
           <div class="">
-            <figure class="image" data-function="getAsset(6pNUkznq5tmKzWs9pJRWRJ)">
-            </figure>
+            <figure
+              class="image"
+              data-function="getAsset(6pNUkznq5tmKzWs9pJRWRJ)"
+            ></figure>
           </div>
         </div>
-        <div class="column dart-function-blinder" data-function="get(customHtml, id:3yoWMcm9dbM1bPSVjJqvBE)">
-          <p>*|html|*
-          </p>
+        <div
+          class="column dart-function-blinder"
+          data-function="get(customHtml, id:3yoWMcm9dbM1bPSVjJqvBE)"
+        >
+          <p>*|html|*</p>
         </div>
         <div class="column is-1-desktop"></div>
       </div>
@@ -283,8 +281,7 @@
           var diff = Date.now() - foundationDate;
           var ageDate = new Date(diff); // miliseconds from epoch
           document.getElementById("yearGoing").innerHTML =
-            Math.abs(ageDate.getUTCFullYear() - 1970).toString() +
-            "&nbspYEARS";
+            Math.abs(ageDate.getUTCFullYear() - 1970).toString() + "&nbspYEARS";
         </script>
       </div>
     </section>

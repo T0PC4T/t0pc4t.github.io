@@ -44,6 +44,9 @@
     height: 400px;
     z-index: 1;
   }
+  .chapter-active-false {
+    background-color: rgb(231, 231, 231);
+  }
 </style>
 
     <title>Chapters | juventutem.org</title>
@@ -181,15 +184,15 @@
       <div class="columns">
         <div
           class="column is-offset-0-mobile is-12-mobile is-offset-2-desktop is-8-desktop  "
- data-function="fetch(chapterData, chapters, sys.createdAt,
-20)"        >
+ data-function="fetch(chapterData, chapters, -fields.active,
+20)"         >
           <h1 class="title">Chapters</h1>
 
 <div id="map" data-function="mapFromContentful(chapterData)"></div>
 
 <div class="is-fullwidth">
   <div
-    class="card dart-function-blinder mb-6"
+    class="card dart-function-blinder mb-6 chapter-active-*|active|*"
     data-function="fetchFor(chapterData)"
   >
     <div class="card-content">

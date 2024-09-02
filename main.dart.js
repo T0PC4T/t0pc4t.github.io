@@ -4278,7 +4278,7 @@ A.hm.prototype={
 $2(a,b){var s=t.m
 s.a(a)
 t.K.a(b)
-return'<div class="columns is-fullwidth">\n          <div\n            class="column is-8-mobile is-6-desktop is-offset-2-mobile is-offset-3-desktop"\n          >\n            <figure class="image is-fullwidth">\n              <img\n                class="m-2"\n                src='+A.w(s.a(s.a(s.a(s.a(a.data).target).fields).file).url)+'\n                alt=""\n                srcset=""\n              />\n            </figure>\n          </div>\n        </div>\n        '},
+return'          <div class="m-1 is-flex is-flex-direction-column is-align-items-center is-justify-content-center">\n            <figure class="image">\n              <img\n                class="m-2"\n                src='+A.w(s.a(s.a(s.a(s.a(a.data).target).fields).file).url)+'\n                alt=""\n                srcset=""\n                style="width:auto; height:auto; max-width: 95%; max-height: 70vh;"\n              />\n            </figure>\n          </div>\n        '},
 $S:11}
 A.bI.prototype={
 F(){var s=0,r=A.cE(t.z),q=this,p
