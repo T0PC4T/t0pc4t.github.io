@@ -4296,7 +4296,7 @@ A.hl.prototype={
 $2(a,b){var s=t.m
 s.a(a)
 t.K.a(b)
-return'          <div class="m-1 is-flex is-flex-direction-column is-align-items-center is-justify-content-center">\n            <figure class="image">\n              <img\n                class="m-2"\n                src='+A.w(s.a(s.a(s.a(s.a(a.data).target).fields).file).url)+'\n                alt=""\n                srcset=""\n                style="width:auto; height:auto; max-width: 90%; max-height: 600px;"\n              />\n            </figure>\n          </div>\n        '},
+return'          <div class="m-1 is-flex is-flex-direction-column is-align-items-center is-justify-content-center">\n            <figure class="image is-flex is-flex-direction-column is-align-items-center is-justify-content-center">\n              <img\n                class="m-2"\n                src='+A.w(s.a(s.a(s.a(s.a(a.data).target).fields).file).url)+'\n                alt=""\n                srcset=""\n                style="width:auto; height:auto; max-width: 90%; max-height: 600px;"\n              />\n            </figure>\n          </div>\n        '},
 $S:11}
 A.bH.prototype={
 F(){var s=0,r=A.cD(t.z),q=this,p
